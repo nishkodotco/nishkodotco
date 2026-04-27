@@ -54,8 +54,8 @@ export default function BentoPortfolio() {
         <motion.div variants={itemVariants}
           className="lg:col-span-2 lg:col-start-1 lg:row-span-1 lg:row-start-4">
           <div className="w-full h-full rounded-xl border border-[#E5E5E5] bg-white flex flex-col justify-center px-4 py-3">
-            <h2 className="text-base font-bold text-[#1A1A1A] tracking-tight leading-tight">
-              Nishant Kant Ojha
+            <h2 className="text-xs font-semibold uppercase tracking-widest text-[#1A1A1A] mb-1">
+              nishko
             </h2>
             <p className="text-xs text-[#737373] mt-0.5">Azure AI Engineer</p>
             <div className="flex items-center gap-1 mt-2">

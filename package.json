@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && touch docs/.nojekyll",
-    "start": "next start",
+    "start": "npx serve@latest docs",
     "lint": "eslint"
   },
   "dependencies": {
