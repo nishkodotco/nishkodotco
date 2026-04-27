@@ -10,8 +10,7 @@ import { useRouter } from 'next/navigation';
 import { experiences } from "@/data/experience";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 
-// Cinnabar Orange — used only for Live Status dot and hover accents
-const ORANGE = '#F97316';
+
 
 export default function BentoPortfolio() {
   const containerVariants = {
@@ -54,10 +53,10 @@ export default function BentoPortfolio() {
         <motion.div variants={itemVariants}
           className="lg:col-span-2 lg:col-start-1 lg:row-span-1 lg:row-start-4">
           <div className="w-full h-full rounded-xl border border-[#E5E5E5] bg-white flex flex-col justify-center px-4 py-3">
-            <h2 className="text-xs font-semibold uppercase tracking-widest text-[#1A1A1A] mb-1">
+            <h2 className="text-4xl font-bold tracking-widest text-[#1A1A1A] mb-1">
               nishko
             </h2>
-            <p className="text-xs text-[#737373] mt-0.5">Azure AI Engineer</p>
+
             <div className="flex items-center gap-1 mt-2">
               <MapPin className="h-3 w-3 text-[#737373] shrink-0" />
               <span className="text-xs text-[#737373]">Toronto, Ontario</span>
@@ -74,10 +73,8 @@ export default function BentoPortfolio() {
                 <div className="flex items-center gap-2.5">
                   {/* Live Status — Cinnabar Orange */}
                   <span className="relative flex h-2.5 w-2.5">
-                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full opacity-50"
-                      style={{ backgroundColor: ORANGE }} />
-                    <span className="relative inline-flex rounded-full h-2.5 w-2.5"
-                      style={{ backgroundColor: ORANGE }} />
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-xl bg-cinnabar opacity-50" />
+                    <span className="relative inline-flex rounded-xl h-2.5 w-2.5 bg-cinnabar" />
                   </span>
                   <CardTitle className="text-sm font-semibold text-[#1A1A1A] tracking-tight">
                     Experience
@@ -96,7 +93,7 @@ export default function BentoPortfolio() {
                     {/* Role header */}
                     <div className="flex flex-col sm:flex-row justify-between sm:items-start gap-3 mb-4">
                       <div className="flex items-center gap-3">
-                        <div className="h-10 w-10 shrink-0 rounded-full border border-[#E5E5E5] bg-white overflow-hidden flex items-center justify-center p-1">
+                        <div className="h-10 w-10 shrink-0 rounded-xl border border-[#E5E5E5] bg-white overflow-hidden flex items-center justify-center p-1">
                           <img src={exp.logo} alt={exp.company} className="object-contain h-full w-full" />
                         </div>
                         <div>
@@ -104,7 +101,7 @@ export default function BentoPortfolio() {
                           <p className="text-[#737373] text-xs mt-0.5">{exp.company}</p>
                         </div>
                       </div>
-                      <span className="text-xs font-medium text-[#737373] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-1 rounded-full w-fit whitespace-nowrap">
+                      <span className="text-xs font-medium text-[#737373] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-1 rounded-xl w-fit whitespace-nowrap">
                         {exp.dateRange}
                       </span>
                     </div>
@@ -120,7 +117,7 @@ export default function BentoPortfolio() {
                     <div className="flex flex-wrap gap-1.5">
                       {exp.techStack.map((tech) => (
                         <span key={tech}
-                          className="text-xs font-medium text-[#1A1A1A] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-0.5 rounded-full transition-colors hover:border-[#F97316] hover:text-[#F97316]">
+                          className="text-xs font-medium text-[#1A1A1A] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-0.5 rounded-xl transition-colors hover:border-[#F97316] hover:text-[#F97316]">
                           {tech}
                         </span>
                       ))}
@@ -150,7 +147,7 @@ export default function BentoPortfolio() {
               <div className="flex flex-wrap gap-1.5 mt-4">
                 {["Terraform", "Next.js", "Azure OpenAI", "+ 3 more"].map((t) => (
                   <span key={t}
-                    className="text-xs font-medium text-[#1A1A1A] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-0.5 rounded-full">
+                    className="text-xs font-medium text-[#1A1A1A] bg-[#F5F5F5] border border-[#E5E5E5] px-2.5 py-0.5 rounded-xl">
                     {t}
                   </span>
                 ))}
@@ -168,7 +165,7 @@ export default function BentoPortfolio() {
               className="w-full h-full text-[#A3A3A3] group-hover:text-[#F97316] transition-colors duration-200"
             />
             {/* Tooltip */}
-            <span className="pointer-events-none absolute bottom-[-1.75rem] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md bg-[#1A1A1A] px-2 py-1 text-[10px] font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+            <span className="pointer-events-none absolute bottom-[-1.75rem] left-1/2 -translate-x-1/2 whitespace-nowrap rounded-xl bg-[#1A1A1A] px-2 py-1 text-[10px] font-medium text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200">
               Resume
             </span>
           </Link>
@@ -199,7 +196,7 @@ export default function BentoPortfolio() {
                     router.push('/blog');
                   }
                 }}
-                className="ml-3 p-1.5 rounded-lg hover:bg-[#F5F5F5] transition-colors group"
+                className="ml-3 p-1.5 rounded-xl hover:bg-[#F5F5F5] transition-colors group"
                 aria-label={blogExpanded ? 'Collapse blog' : 'Expand blog'}
               >
                 {blogExpanded
