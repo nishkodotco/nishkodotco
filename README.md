@@ -5,3 +5,10 @@ I am someone who enjoys solving problems and serving people. I believe the ultim
 
 I am deeply curious about how the world works. I spend much of my time reading, writing, learning, and teaching—trying to understand the systems and ideas that shape our world. My interests span Mathematics, Physics, Economics, Geopolitics, and Philosophy.
 </p>
+
+
+## <img src="https://raw.githubusercontent.com/thevedicdeveloper/devtools/main/emojis/telegram/card-index-dividers.gif" width="32"/> PROJECTS
+
+🏋️ **Xponent**
+
+✍️ **Mathematics For Everyone** - Mathematics for those who can read.
