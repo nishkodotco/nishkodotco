@@ -11,4 +11,4 @@ I am deeply curious about how the world works. I spend much of my time reading, 
 
 🏋️ **Xponent**
 
-✍️ **Mathematics For Everyone** - Mathematics for those who can read.
+✏️ **Mathematics For Everyone** - Mathematics for those who can read.
